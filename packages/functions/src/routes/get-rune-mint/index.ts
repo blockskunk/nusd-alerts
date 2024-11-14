@@ -1,4 +1,3 @@
-import { Example } from "../../../../core/src/example";
 import { BlockchainStateTracker } from "../../lib/connectors/dynamo";
 import { BlockHeightMonitor } from "../../lib/connectors/memepool";
 import { Hiro } from "../../lib/connectors/hiro/hiro";
@@ -42,6 +41,6 @@ export const getRuneMint: ApiHandler = async (_event) => {
 
   return {
     statusCode: 200,
-    body: `${Example.hello()} Linked to.`,
+    body: `Processing blockchain rune data...`,
   };
 };

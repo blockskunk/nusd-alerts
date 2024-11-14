@@ -1,5 +1,4 @@
 import { Handler } from "aws-lambda";
-import { Example } from "@NUSD-ALERTS/core/example";
 import { getRuneMint } from "./routes/get-rune-mint";
 
 export const handleGetRuneMint: Handler = async (_event) => {
