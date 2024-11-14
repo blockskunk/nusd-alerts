@@ -1,8 +1,8 @@
 {
-  "name": "@monorepo-template/scripts",
+  "name": "@NUSD-ALERTS/scripts",
   "version": "0.0.0",
   "dependencies": {
-    "@monorepo-template/core": "*",
+    "@NUSD-ALERTS/core": "*",
     "sst": "*"
   },
   "scripts": {

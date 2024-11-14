@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-template",
+  "name": "NUSD-ALERTS",
   "version": "0.0.0",
   "workspaces": [
     "packages/*"
@@ -10,6 +10,7 @@
     "typescript": "5.6.2"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "sst": "^3"
   }
 }

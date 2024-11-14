@@ -1,10 +1,13 @@
-import { Resource } from "sst";
 import { Handler } from "aws-lambda";
-import { Example } from "@monorepo-template/core/example";
+import { Example } from "@NUSD-ALERTS/core/example";
+import { getRuneMint } from "./routes/get-rune-mint";
 
-export const handler: Handler = async (_event) => {
+export const handleGetRuneMint: Handler = async (_event) => {
+  console.log("Hello from getRuneMint");
+  const response = getRuneMint(_event);
+  console.log("Response:", response);
   return {
     statusCode: 200,
-    body: `${Example.hello()} Linked to ${Resource.MyBucket.name}.`,
+    body: `Processing blockchain rune data...`,
   };
 };
