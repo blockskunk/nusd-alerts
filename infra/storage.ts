@@ -1,1 +1,10 @@
-export const bucket = new sst.aws.Bucket("MyBucket");
+export const table = new sst.aws.Dynamo("nusd-alerts-state", {
+  fields: {
+    id: "string",
+    lastUpdated: "string",
+  },
+  primaryIndex: {
+    hashKey: "id",
+    rangeKey: "lastUpdated",
+  },
+});

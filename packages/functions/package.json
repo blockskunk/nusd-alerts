@@ -1,8 +1,11 @@
 {
-  "name": "@monorepo-template/functions",
+  "name": "@NUSD-ALERTS/functions",
   "version": "0.0.0",
   "dependencies": {
-    "@monorepo-template/core": "*",
+    "@aws-sdk/client-dynamodb": "^3.687.0",
+    "@aws-sdk/lib-dynamodb": "^3.687.0",
+    "@NUSD-ALERTS/core": "*",
+    "axios": "^1.7.7",
     "sst": "*"
   },
   "devDependencies": {

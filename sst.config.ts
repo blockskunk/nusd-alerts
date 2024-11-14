@@ -3,14 +3,17 @@
 export default $config({
   app(input) {
     return {
-      name: "monorepo-template",
+      name: "NUSD-ALERTS",
       removal: input?.stage === "production" ? "retain" : "remove",
       home: "aws",
     };
   },
   async run() {
-    await import("./infra/storage");
     const api = await import("./infra/api");
+
+    // Disabled until working with test API call
+    // await import("./infra/cron");
+    await import("./infra/storage");
 
     return {
       api: api.myApi.url,
